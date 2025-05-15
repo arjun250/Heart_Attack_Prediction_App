@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d1cecec9;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: white;
+            width: 50%;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+            margin-top: 40px;
+            margin-bottom: 85px;
+        }
+        h2 {
+            color: #555;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        input {
+            width: 80%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background: #218838;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+        .footer {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heart Attack Prediction App</h1>
+    
+    <div class="container">
+        <h2>Enter Patient Details</h2>
+        <label>Age: <input type="number" id="age"></label>
+        <label>SysBP: <input type="number" id="sysBP"></label>
+        <label>Prevalent Hyp: <input type="number" id="prevalentHyp"></label>
+        <button onclick="predict()">Predict</button>
+        <p id="predictionResult"></p>
+    </div>
+    <div class="footer">Developed by Arjun Chaurasiya</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
